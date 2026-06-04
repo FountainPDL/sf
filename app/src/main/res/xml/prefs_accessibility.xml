@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Display">
+        <ListPreference
+            android:key="font_size"
+            android:title="Font Size"
+            android:entries="@array/font_size_names"
+            android:entryValues="@array/font_size_values"
+            android:defaultValue="medium" />
+
+        <SwitchPreferenceCompat
+            android:key="force_dark_mode_pages"
+            android:title="Force Dark Mode on Pages"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="high_contrast"
+            android:title="High Contrast Mode"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Interaction">
+        <SwitchPreferenceCompat
+            android:key="haptic_feedback"
+            android:title="Haptic Feedback"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="swipe_navigation"
+            android:title="Swipe to Navigate"
+            android:summary="Swipe left/right to go back/forward"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="pull_to_refresh"
+            android:title="Pull to Refresh"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Theme">
+        <ListPreference
+            android:key="theme_mode"
+            android:title="Theme"
+            android:entries="@array/theme_names"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="New Tab Page">
+        <SwitchPreferenceCompat
+            android:key="show_speed_dial"
+            android:title="Show Speed Dial"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="show_news"
+            android:title="Show News Feed"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Reader Mode">
+        <ListPreference
+            android:key="reader_theme"
+            android:title="Reader Theme"
+            android:entries="@array/reader_theme_names"
+            android:entryValues="@array/reader_theme_values"
+            android:defaultValue="light" />
+
+        <SeekBarPreference
+            android:key="reader_font_size"
+            android:title="Font Size"
+            android:defaultValue="18"
+            android:min="12"
+            android:max="32" />
+    </PreferenceCategory>
+</PreferenceScreen>

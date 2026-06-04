@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SurfFountain" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/sf_primary</item>
+        <item name="colorPrimaryVariant">@color/sf_primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/sf_secondary</item>
+        <item name="colorSecondaryVariant">@color/sf_secondary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorError">@color/sf_error</item>
+        <item name="android:windowBackground">@color/sf_background_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <style name="Theme.SurfFountain.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sf_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/sf_primary</item>
+        <item name="postSplashScreenTheme">@style/Theme.SurfFountain</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+
+    <style name="Theme.SurfFountain.Incognito" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/sf_incognito</item>
+        <item name="colorOnPrimary">@color/sf_incognito_text</item>
+        <item name="android:windowBackground">@color/sf_incognito</item>
+    </style>
+
+</resources>

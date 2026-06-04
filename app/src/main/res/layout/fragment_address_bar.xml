@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="6dp"
+    android:gravity="center_vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Shield / Security indicator -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_shield"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:icon="@drawable/ic_shield_secure"
+        app:iconSize="18dp" />
+
+    <!-- URL Input -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="4dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="?attr/colorOutlineVariant"
+        app:cardBackgroundColor="?attr/colorSurfaceVariant">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:imeOptions="actionGo|flagNoExtractUi"
+                android:inputType="textUri|textNoSuggestions"
+                android:selectAllOnFocus="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_clear"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="gone"
+                app:icon="@drawable/ic_close"
+                app:iconSize="16dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Voice search -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_voice_search"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:visibility="gone"
+        app:icon="@drawable/ic_mic"
+        app:iconSize="18dp" />
+
+</LinearLayout>

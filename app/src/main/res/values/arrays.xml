@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_engine_names">
+        <item>Brave Search</item>
+        <item>Google</item>
+        <item>Bing</item>
+        <item>DuckDuckGo</item>
+        <item>Yahoo</item>
+        <item>Startpage</item>
+        <item>Ecosia</item>
+    </string-array>
+    <string-array name="search_engine_values">
+        <item>brave</item>
+        <item>google</item>
+        <item>bing</item>
+        <item>duckduckgo</item>
+        <item>yahoo</item>
+        <item>startpage</item>
+        <item>ecosia</item>
+    </string-array>
+
+    <string-array name="theme_names">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+        <item>AMOLED Black</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="tab_layout_names">
+        <item>Grid</item>
+        <item>List</item>
+    </string-array>
+    <string-array name="tab_layout_values">
+        <item>grid</item>
+        <item>list</item>
+    </string-array>
+
+    <string-array name="reader_theme_names">
+        <item>Light</item>
+        <item>Sepia</item>
+        <item>Dark</item>
+        <item>AMOLED</item>
+    </string-array>
+    <string-array name="reader_theme_values">
+        <item>light</item>
+        <item>sepia</item>
+        <item>dark</item>
+        <item>amoled</item>
+    </string-array>
+
+    <string-array name="ai_provider_names">
+        <item>Google Gemini</item>
+        <item>OpenAI (ChatGPT)</item>
+        <item>Anthropic Claude</item>
+    </string-array>
+    <string-array name="ai_provider_values">
+        <item>gemini</item>
+        <item>openai</item>
+        <item>anthropic</item>
+    </string-array>
+
+    <string-array name="font_size_names">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra Large</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+    </string-array>
+</resources>

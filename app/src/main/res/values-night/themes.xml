@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SurfFountain" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/sf_primary</item>
+        <item name="colorPrimaryVariant">@color/sf_primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/sf_accent</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorError">@color/sf_error</item>
+        <item name="android:windowBackground">@color/sf_background_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

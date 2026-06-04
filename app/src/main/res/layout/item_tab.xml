@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tab thumbnail -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="?attr/colorSurfaceVariant">
+
+            <ImageView
+                android:id="@+id/iv_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <!-- Incognito badge -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_incognito"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="top|start"
+                android:text="Incognito"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:chipMinHeight="24dp"
+                app:chipBackgroundColor="#80000000"
+                android:textColor="@android:color/white" />
+
+            <!-- Close button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_close"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="4dp"
+                app:icon="@drawable/ic_close"
+                app:iconSize="16dp"
+                app:iconTint="@android:color/white" />
+
+            <!-- Pinned badge -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/icon_pinned"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="4dp"
+                android:visibility="gone"
+                app:icon="@drawable/ic_pin"
+                app:iconSize="14dp"
+                app:iconTint="@color/sf_primary" />
+        </FrameLayout>
+
+        <!-- Tab info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_favicon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="?attr/colorOnSurface" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Surf Shield">
+        <SwitchPreferenceCompat
+            android:key="ad_block"
+            android:title="Block Ads"
+            android:summary="Block advertisements using filter lists"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="tracker_block"
+            android:title="Block Trackers"
+            android:summary="Prevent cross-site tracking"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="https_upgrade"
+            android:title="HTTPS Everywhere"
+            android:summary="Automatically upgrade HTTP to HTTPS"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="fingerprint_protection"
+            android:title="Fingerprint Protection"
+            android:summary="Prevent browser fingerprinting"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="cookie_block"
+            android:title="Block Third-Party Cookies"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="url_cleaning"
+            android:title="Clean Tracking URLs"
+            android:summary="Remove UTM and tracking parameters from URLs"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="amp_redirect"
+            android:title="Redirect AMP Pages"
+            android:summary="Load original pages instead of AMP versions"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="social_tracker_block"
+            android:title="Block Social Trackers"
+            android:summary="Block Facebook, Twitter pixel trackers"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="script_block"
+            android:title="Block All Scripts"
+            android:summary="May break some websites"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Permissions">
+        <SwitchPreferenceCompat
+            android:key="location_enabled"
+            android:title="Location Access"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="camera_enabled"
+            android:title="Camera Access"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="mic_enabled"
+            android:title="Microphone Access"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

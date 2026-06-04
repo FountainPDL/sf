@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="AI Provider">
+        <ListPreference
+            android:key="ai_provider"
+            android:title="AI Provider"
+            android:entries="@array/ai_provider_names"
+            android:entryValues="@array/ai_provider_values"
+            android:defaultValue="gemini" />
+
+        <EditTextPreference
+            android:key="ai_api_key"
+            android:title="API Key"
+            android:summary="Your AI provider API key"
+            android:inputType="textPassword" />
+
+        <EditTextPreference
+            android:key="ai_model"
+            android:title="Model"
+            android:summary="Model to use (e.g. gemini-pro, gpt-4o-mini)"
+            android:defaultValue="gemini-pro" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Features">
+        <SwitchPreferenceCompat
+            android:key="ai_page_context"
+            android:title="Page Context"
+            android:summary="Allow AI to read current page content"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="ai_auto_summarize"
+            android:title="Auto Summarize Articles"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

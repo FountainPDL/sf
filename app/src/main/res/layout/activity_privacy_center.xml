@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIconTint="?attr/colorOnSurface" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Stats Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/sf_primary"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Surf Shield"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                            <TextView android:id="@+id/tv_ads_blocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="28sp" android:textStyle="bold" android:textColor="@android:color/white" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ads" android:textSize="12sp" android:textColor="#CCFFFFFF" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                            <TextView android:id="@+id/tv_trackers_blocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="28sp" android:textStyle="bold" android:textColor="@android:color/white" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trackers" android:textSize="12sp" android:textColor="#CCFFFFFF" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                            <TextView android:id="@+id/tv_https_upgrades" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="28sp" android:textStyle="bold" android:textColor="@android:color/white" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HTTPS" android:textSize="12sp" android:textColor="#CCFFFFFF" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+                            <TextView android:id="@+id/tv_total_blocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="28sp" android:textStyle="bold" android:textColor="@android:color/white" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total" android:textSize="12sp" android:textColor="#CCFFFFFF" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/tv_data_saved" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="0 KB saved" android:textColor="#CCFFFFFF" android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Shield Toggles -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Surf Shield Settings" android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/colorOnSurface" android:layout_marginBottom="12dp" />
+
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_ad_block" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_trackers" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_https" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_fingerprint" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_cookies" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_amp" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_url_cleaning" />
+            <include layout="@layout/item_shield_toggle" android:id="@+id/toggle_social_trackers" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_clear_data"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Clear All Browsing Data"
+                app:iconGravity="textStart"
+                app:icon="@drawable/ic_delete" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

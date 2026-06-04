@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Developer Options">
+        <SwitchPreferenceCompat
+            android:key="webview_debugging"
+            android:title="WebView Remote Debugging"
+            android:summary="Enable Chrome DevTools Protocol via USB"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="custom_user_agent"
+            android:title="Custom User Agent"
+            android:summary="Override browser user agent string" />
+
+        <SwitchPreferenceCompat
+            android:key="show_console"
+            android:title="Show JavaScript Console"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="clear_cache"
+            android:title="Clear Cache"
+            android:summary="Remove all cached web content" />
+
+        <Preference
+            android:key="crash_logs"
+            android:title="View Crash Logs"
+            android:summary="Show saved crash reports" />
+
+        <Preference
+            android:key="export_settings"
+            android:title="Export Settings"
+            android:summary="Save settings to a file" />
+
+        <Preference
+            android:key="import_settings"
+            android:title="Import Settings"
+            android:summary="Load settings from a file" />
+    </PreferenceCategory>
+</PreferenceScreen>

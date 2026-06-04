@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Download Location">
+        <Preference
+            android:key="download_path"
+            android:title="Download Folder"
+            android:summary="Choose where to save downloaded files" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Download Behavior">
+        <SwitchPreferenceCompat
+            android:key="ask_download_location"
+            android:title="Ask Where to Save"
+            android:defaultValue="false" />
+
+        <SeekBarPreference
+            android:key="download_threads"
+            android:title="Parallel Download Threads"
+            android:summary="More threads = faster downloads"
+            android:defaultValue="4"
+            android:min="1"
+            android:max="8" />
+
+        <SwitchPreferenceCompat
+            android:key="wifi_only_downloads"
+            android:title="Wi-Fi Only Downloads"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_open_after_download"
+            android:title="Auto-Open After Download"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

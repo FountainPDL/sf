@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="App Lock">
+        <SwitchPreferenceCompat
+            android:key="biometric_lock"
+            android:title="Biometric App Lock"
+            android:summary="Require fingerprint or face to open the browser"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="biometric_private"
+            android:title="Lock Incognito Tabs"
+            android:summary="Require authentication to view incognito tabs"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Password Manager">
+        <SwitchPreferenceCompat
+            android:key="save_passwords"
+            android:title="Save Passwords"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="autofill"
+            android:title="Autofill Passwords"
+            android:defaultValue="true" />
+
+        <Preference
+            android:key="check_compromised"
+            android:title="Check for Compromised Passwords"
+            android:summary="Scan saved passwords against breach databases" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="SSL / Certificates">
+        <SwitchPreferenceCompat
+            android:key="https_upgrade"
+            android:title="HTTPS Upgrade"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

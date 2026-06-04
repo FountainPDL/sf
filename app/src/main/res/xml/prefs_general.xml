@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Search">
+        <ListPreference
+            android:key="search_engine"
+            android:title="Search Engine"
+            android:summary="Choose your default search engine"
+            android:defaultValue="brave"
+            android:entries="@array/search_engine_names"
+            android:entryValues="@array/search_engine_values" />
+
+        <EditTextPreference
+            android:key="home_page"
+            android:title="Home Page"
+            android:summary="URL to load on startup"
+            android:defaultValue="surf://home" />
+
+        <EditTextPreference
+            android:key="new_tab_page"
+            android:title="New Tab Page"
+            android:summary="Page to show in new tabs"
+            android:defaultValue="surf://newtab" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Browsing">
+        <SwitchPreferenceCompat
+            android:key="javascript"
+            android:title="JavaScript"
+            android:summary="Enable JavaScript execution"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="cookies"
+            android:title="Cookies"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="do_not_track"
+            android:title="Do Not Track"
+            android:summary="Request sites not to track you"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="clear_on_exit"
+            android:title="Clear Data on Exit"
+            android:summary="Delete cookies and cache when browser closes"
+            android:defaultValue="false" />
+
+        <SwitchPreferenceCompat
+            android:key="autofill"
+            android:title="Autofill Forms"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="save_passwords"
+            android:title="Save Passwords"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Tabs">
+        <ListPreference
+            android:key="tab_layout"
+            android:title="Tab Layout"
+            android:entries="@array/tab_layout_names"
+            android:entryValues="@array/tab_layout_values"
+            android:defaultValue="grid" />
+    </PreferenceCategory>
+</PreferenceScreen>
