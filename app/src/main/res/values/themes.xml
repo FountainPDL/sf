@@ -23,7 +23,7 @@
         <item name="postSplashScreenTheme">@style/Theme.SurfFountain</item>
     </style>
 
-    <style name="BottomSheetStyle" parent="Theme.Material3.BottomSheetDialog">
+    <style name="BottomSheetStyle" parent="ThemeOverlay.Material3.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
     </style>
 
