@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:text="Close All"
             app:iconGravity="textStart"
-            app:icon="@drawable/ic_close_all" />
+            app:icon="@drawable/ic_close" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_new_tab"
