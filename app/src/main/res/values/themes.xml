@@ -16,7 +16,6 @@
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
     </style>
 
-    <!-- Splash: plain Material3 theme — no core-splashscreen parent needed -->
     <style name="Theme.SurfFountain.Splash" parent="Theme.SurfFountain">
         <item name="android:windowBackground">@color/sf_primary</item>
         <item name="android:windowNoTitle">true</item>
@@ -24,7 +23,7 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="BottomSheetStyle" parent="Theme.Material3.BottomSheetDialog">
+    <style name="BottomSheetStyle" parent="ThemeOverlay.Material3.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
     </style>
 
