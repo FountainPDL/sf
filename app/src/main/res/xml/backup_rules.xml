@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <full-backup-content>
-    <!-- Include settings -->
     <include domain="sharedpref" path="surf_fountain_prefs.xml" />
-    <!-- Exclude sensitive data -->
     <exclude domain="database" path="surf_fountain.db" />
-    <exclude domain="sharedpref" path="surf_fountain_prefs.xml" tools:ignore="FullBackupContent" />
+    <exclude domain="sharedpref" path="surf_fountain_prefs.xml" />
 </full-backup-content>
