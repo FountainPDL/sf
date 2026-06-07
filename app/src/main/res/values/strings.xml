@@ -69,9 +69,11 @@
     <string name="scan">Scan</string>
     <string name="generate">Generate</string>
     <string name="qr_tools">QR Tools</string>
-    <string name="vpn_disconnected">Disconnected</string>
+    <string name="vpn_connected">VPN Connected</string>
+    <string name="vpn_disconnected">VPN Disconnected</string>
     <string name="select_location">Select a location</string>
     <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
     <string name="select_server">Choose a Server</string>
     <string name="qr_scan_hint">Point camera at a QR code</string>
     <string name="scanned_result">Scanned Result</string>
@@ -86,7 +88,6 @@
     <string name="file_manager">File Manager</string>
     <string name="ai_assistant">Surf AI Assistant</string>
     <string name="type_a_message">Type a message…</string>
-    <string name="vpn_connected">Connected</string>
     <string name="splash_tagline">Your Privacy. Your Browser.</string>
     <string name="restore_tab">Restore Tab</string>
     <string name="ai_summarize">Summarize Page</string>
@@ -96,8 +97,4 @@
     <string name="generate_password">Generate Password</string>
     <string name="save_password">Save Password?</string>
     <string name="autofill">Autofill</string>
-    <string name="vpn_connected">VPN Connected</string>
-    <string name="vpn_disconnected">VPN Disconnected</string>
-    <string name="connect">Connect</string>
-    <string name="disconnect">Disconnect</string>
 </resources>
