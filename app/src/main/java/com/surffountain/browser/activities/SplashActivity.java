@@ -2,9 +2,10 @@ package com.surffountain.browser.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.splashscreen.SplashScreen;
 
 import com.surffountain.browser.SurfFountainApp;
 import com.surffountain.browser.security.BiometricHelper;
@@ -12,10 +13,10 @@ import com.surffountain.browser.settings.SettingsManager;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private static final long SPLASH_DELAY_MS = 800;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-
         super.onCreate(savedInstanceState);
 
         SettingsManager sm = SurfFountainApp.getInstance().getSettingsManager();
@@ -32,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
             );
         } else {
-            launchMain();
+            new Handler(Looper.getMainLooper()).postDelayed(this::launchMain, SPLASH_DELAY_MS);
         }
     }
 

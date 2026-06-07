@@ -16,14 +16,15 @@
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
     </style>
 
-    <style name="Theme.SurfFountain.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/sf_primary</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="windowSplashScreenIconBackgroundColor">@color/sf_primary</item>
-        <item name="postSplashScreenTheme">@style/Theme.SurfFountain</item>
+    <!-- Splash: plain Material3 theme — no core-splashscreen parent needed -->
+    <style name="Theme.SurfFountain.Splash" parent="Theme.SurfFountain">
+        <item name="android:windowBackground">@color/sf_primary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="BottomSheetStyle" parent="ThemeOverlay.Material3.BottomSheetDialog">
+    <style name="BottomSheetStyle" parent="Theme.Material3.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
     </style>
 

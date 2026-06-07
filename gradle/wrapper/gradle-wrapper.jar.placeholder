@@ -1,0 +1,17 @@
+This file is a placeholder. The real gradle-wrapper.jar is a binary file (~60KB) that must be
+present at: gradle/wrapper/gradle-wrapper.jar
+
+To get it, run ONE of these:
+
+Option A — Let Gradle download it automatically:
+  gradle wrapper --gradle-version 8.6
+
+Option B — Copy from any existing Android project:
+  cp /path/to/other-project/gradle/wrapper/gradle-wrapper.jar gradle/wrapper/
+
+Option C — After cloning this repo, run in Termux / CI:
+  curl -L https://github.com/gradle/gradle/raw/v8.6.0/gradle/wrapper/gradle-wrapper.jar \
+       -o gradle/wrapper/gradle-wrapper.jar
+
+The GitHub Actions workflow (./github/workflows/build-apk.yml) handles this automatically
+via the actions/setup-java + Gradle cache actions — no manual step needed in CI.
