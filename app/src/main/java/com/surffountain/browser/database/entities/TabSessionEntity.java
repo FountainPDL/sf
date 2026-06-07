@@ -1,5 +1,6 @@
 package com.surffountain.browser.database.entities;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Index;
@@ -12,7 +13,8 @@ import androidx.room.PrimaryKey;
 public class TabSessionEntity {
 
     @PrimaryKey
-    public String id;
+    @NonNull
+    public String id = "";
 
     @ColumnInfo(name = "url")
     public String url;
@@ -51,6 +53,6 @@ public class TabSessionEntity {
     public String backStack;
 
     public TabSessionEntity() {
-        this.savedAt = System.currentTimeMillis();
+        savedAt = System.currentTimeMillis();
     }
 }
